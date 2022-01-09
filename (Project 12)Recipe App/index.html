@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/db7ecc96f7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="mobile-container">
+      <header>
+        <input type="text" " "
+        <button id="search">
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            width="20px"
+            height="64px"
+            viewBox="0 0 64 64"
+            enable-background="new 0 0 64 64"
+            xml:space="preserve"
+          >
+            <g>
+              <circle
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                cx="21"
+                cy="21"
+                r="20"
+              />
+              <line
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                x1="35"
+                y1="35"
+                x2="41"
+                y2="41"
+              />
+
+              <rect
+                x="46.257"
+                y="37.065"
+                transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.9178 50.5)"
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                width="8.485"
+                height="26.87"
+              />
+            </g>
+          </svg>
+        </button>
+      </header>
+      <div class="fav-container">
+        <h3>Favorite Meals</h3>
+        <ul class="fav-meals" id="fav-meals">
+          <!-- <li>
+            <img src="img/Rice and Beans.jpg" alt="" /><span
+              >Rice and Beans</span
+            >
+          </li>
+
+          <li>
+            <img src="img/Pounded Yam.jpg" alt="" /><span
+              >Pounded Yam and Egusi</span
+            >
+          </li>
+
+          <li><img src="img/noodles.jpg" alt="" /><span>Noodles</span></li>
+
+          <li><img src="img/ewa.jpg" alt="" /><span>Bread And Beans</span></li>
+
+          <li>
+            <img src="img/egg.jpeg" alt="" /><span>Plantain And Egg</span>
+          </li>
+
+          <li>
+            <img src="img/pap.jpg" alt="" /><span>Pepper Soup And Pap</span>
+          </li>
+
+          <li>
+            <img src="img/fried.jpg" alt="" /><span
+              >Fried Rice And Chicken</span
+            >
+          </li> -->
+        </ul>
+      </div>
+      <div class="meals" id="meals"></div>
+    </div>
+    <div class="popup-container hidden" id="meal-popup">
+      <div class="popup">
+        <button id="close-popup" class="close-popup">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="meal-info" id="meal-info"></div>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

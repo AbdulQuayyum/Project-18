@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soft-Link</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/db7ecc96f7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="img/logo.png" class="logo" />
+        <ul>
+          <li>
+            <img src="img/notification.png" />
+          </li>
+          <li>
+            <img src="img/inbox.png" />
+          </li>
+          <li>
+            <img src="img/video.png" />
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="img/search.png" />
+          <input type="text" placeholder="search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="img/profile-pic.jpg" />
+        </div>
+      </div>
+
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="img/profile-pic.jpg" />
+            <div>
+              <p>Quayyum Alao</p>
+              <a href="#"> View Your Profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="img/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us improve the new design</a>
+            </div>
+          </div>
+          <hr />
+          <div class="settings-links">
+            <img src="img/setting.png" class="settings-icon" />
+            <a href="#">
+              Settings & Privacy <img src="img/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img src="img/help.png" class="settings-icon" />
+            <a href="#">
+              Help & Support <img src="img/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img src="img/display.png" class="settings-icon" />
+            <a href="#">
+              Display & Accessibility <img src="img/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img src="img/logout.png" class="settings-icon" />
+            <a href="#"> Logout <img src="img/arrow.png" width="10px" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"> <img src="img/news.png" />News </a>
+          <a href="#"> <img src="img/friends.png" />Friends </a>
+          <a href="#"> <img src="img/group.png" />Group </a>
+          <a href="#"> <img src="img/marketplace.png" />Marketplace </a>
+          <a href="#"> <img src="img/watch.png" />Watch </a>
+          <a href="#">See More</a>
+        </div>
+
+        <div class="shortcut-links">
+          <p>Your Shortuts</p>
+          <a href="#"> <img src="img/shortcut-1.png" /> Web Developers </a>
+          <a href="#"> <img src="img/shortcut-2.png" /> Web Design Projects</a>
+          <a href="#"> <img src="img/shortcut-3.jpg" /> J.Cole Fans </a>
+          <a href="#"> <img src="img/shortcut-4.jpg" /> Naruto Fans </a>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="img/upload.png" />
+            <p>Add To Story</p>
+          </div>
+          <div class="story story2">
+            <img src="img/member-1.jpg" />
+            <p>Rokeebah</p>
+          </div>
+          <div class="story story3">
+            <img src="img/member-2.jpg" />
+            <p>Uthman</p>
+          </div>
+          <div class="story story4">
+            <img src="img/member-3.jpg" />
+            <p>Barakah</p>
+          </div>
+          <div class="story story5">
+            <img src="img/member-4.jpg" />
+            <p>Ni'matullah</p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="img/profile-pic.jpg" />
+            <div>
+              <p>Quayyum Alao</p>
+              <small>Public <i class="fas fa-caret-down"></i></small>
+            </div>
+          </div>
+
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind Quayyum?"
+            ></textarea>
+
+            <div class="add-post-links">
+              <a href="#"> <img src="img/live-video.png" /> Live Video</a>
+              <a href="#"> <img src="img/photo.png" /> Photo/Video</a>
+              <a href="#"> <img src="img/feeling.png" /> Feeling/Activity</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="img/profile-pic.jpg" />
+              <div>
+                <p>Quayyum Alao</p>
+                <span>Sat Jan 8 2022, 14:56pm</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fas fa-ellipsis-v"></i> </a>
+          </div>
+
+          <p class="post-text">HAHAHAHAHA Humour Based on my pain😂</p>
+          <img src="img/feed-image-6.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="img/like-blue.png" /> 45</div>
+              <div><img src="img/comments.png" /> 5</div>
+              <div><img src="img/share.png" /> 1</div>
+            </div>
+
+            <div class="post-profile-icon">
+              <img src="img/profile-pic.jpg" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="img/profile-pic.jpg" />
+              <div>
+                <p>Quayyum Alao</p>
+                <span>Thu Jan 6 2022, 12:20pm</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fas fa-ellipsis-v"></i> </a>
+          </div>
+
+          <p class="post-text">
+            Go to <span> @QuayyumAlao</span> on gitHub or LinkedIn to check out
+            some of my projects on Web Designs and Web Application.
+            <a href="#">#github</a> <a href="#">#LinkedIn</a>
+          </p>
+          <img src="img/feed-image-1.jpg" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="img/like-blue.png" /> 120</div>
+              <div><img src="img/comments.png" /> 54</div>
+              <div><img src="img/share.png" /> 10</div>
+            </div>
+
+            <div class="post-profile-icon">
+              <img src="img/profile-pic.jpg" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="img/profile-pic.jpg" />
+              <div>
+                <p>Quayyum Alao</p>
+                <span>Sat Dec 20 2021, 21:57pm</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fas fa-ellipsis-v"></i> </a>
+          </div>
+
+          <p class="post-text">
+            I had a blast today, Thanks😊
+            <a href="#">@Faidah Alao, @Abdullahi Cinnirhoy</a>
+          </p>
+          <p class="post-text">
+            <i class="fas fa-map-marker-alt"> </i>Unwndilly, Ilorin
+          </p>
+          <img src="img/feed-image-4.jpg" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="img/like-blue.png" /> 72</div>
+              <div><img src="img/comments.png" /> 11</div>
+              <div><img src="img/share.png" /> 3</div>
+            </div>
+
+            <div class="post-profile-icon">
+              <img src="img/profile-pic.jpg" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="img/profile-pic.jpg" />
+              <div>
+                <p>Quayyum Alao</p>
+                <span>Wed Nov 11 2021, 06:47am</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fas fa-ellipsis-v"></i> </a>
+          </div>
+
+          <p class="post-text">Profitable skills for a Younging To learn</p>
+          <img src="img/feed-image-3.jpg" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="img/like.png" /> 134</div>
+              <div><img src="img/comments.png" /> 70</div>
+              <div><img src="img/share.png" />25</div>
+            </div>
+
+            <div class="post-profile-icon">
+              <img src="img/profile-pic.jpg" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="img/profile-pic.jpg" />
+              <div>
+                <p>Quayyum Alao</p>
+                <span>Tue Aug 18 2020, 17:47pm</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fas fa-ellipsis-v"></i> </a>
+          </div>
+
+          <p class="post-text">
+            Happy Birthday To my Dawg <a href="#">@Mahmud Rajab</a>
+          </p>
+          <p class="post-text">
+            <i class="fas fa-map-marker-alt"> </i>Ansar-ud-deen Grammar School,
+            Surulere, Lagos.
+          </p>
+          <img src="img/feed-image-2.jpg" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="img/like-blue.png" /> 72</div>
+              <div><img src="img/comments.png" /> 11</div>
+              <div><img src="img/share.png" /> 3</div>
+            </div>
+
+            <div class="post-profile-icon">
+              <img src="img/profile-pic.jpg" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="img/profile-pic.jpg" />
+              <div>
+                <p>Quayyum Alao</p>
+                <span>Fri Jun 17 2020, 13:00pm</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fas fa-ellipsis-v"></i> </a>
+          </div>
+
+          <p class="post-text">
+            Alhamdulilah, Last day of school🥳🥳 <a href="#"> #2020Set</a>
+          </p>
+          <p class="post-text">
+            <i class="fas fa-map-marker-alt"> </i>Ansar-ud-deen Grammar School,
+            Surulere, Lagos.
+          </p>
+          <img src="img/feed-image-5.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="img/like-blue.png" /> 72</div>
+              <div><img src="img/comments.png" /> 11</div>
+              <div><img src="img/share.png" /> 3</div>
+            </div>
+
+            <div class="post-profile-icon">
+              <img src="img/profile-pic.jpg" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="load-more-btn">Load More</button>
+      </div>
+
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#"> See All</a>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>07</h3>
+            <span>January</span>
+          </div>
+          <div class="right-event">
+            <h4>CH0P L1FE G4NG</h4>
+            <p><i class="fas fa-map-marker-alt"> </i>Ikeja Mall, Lagos</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>03</h3>
+            <span>January</span>
+          </div>
+          <div class="right-event">
+            <h4>Mum's Birthday</h4>
+            <p><i class="fas fa-map-marker-alt"> </i>Tejuosho Mall, Lagos</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#"> Close</a>
+        </div>
+        <img src="img/advertisement.png" class="sidebar-ads" />
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#"> Hide Chats</a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="img/member-1.jpg" />
+          </div>
+          <p>Rokeebah Hassan</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="img/member-2.jpg" />
+          </div>
+          <p>Kayode Uthman</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="img/member-3.jpg" />
+          </div>
+          <p>Barakah Shittu</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-copyright">
+        <p>
+          Built by <a href="#" class="footer-link">Alao AbdulQuayyum</a>
+          Copyright &copy; 2022. Credit to Easy Tutorial Youtube Channel
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
