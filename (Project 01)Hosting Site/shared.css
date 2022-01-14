@@ -196,6 +196,7 @@ main {
   float: right;
   align-items: center;
   text-decoration: none;
+  justify-content: center;
 }
 
 .mobile-nav {
